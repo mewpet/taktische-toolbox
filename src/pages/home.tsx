@@ -7,7 +7,6 @@ const Home = () => {
     return (
         <div className="home">
             <Header />
-            Very Early Build Text
         </div>
     )
 }

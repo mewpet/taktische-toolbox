@@ -1,0 +1,16 @@
+.header {
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .link-container {
+        display: flex;
+        gap: .5rem;
+
+        .link {
+            padding: .5rem 2rem;
+            cursor: pointer;
+        }
+    }
+}
