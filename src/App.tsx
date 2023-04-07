@@ -2,11 +2,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Pages
 import Home from './pages/Home';
+import RCT from './pages/RCT';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/random-class-thursday" element={<RCT/>} />
         <Route path="*" element={<Home/>} />
       </Routes>
     </BrowserRouter>
