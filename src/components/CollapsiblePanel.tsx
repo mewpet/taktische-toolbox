@@ -45,7 +45,7 @@ const CollapsiblePanel = (props: CollapsiblePanelProps) => {
             }, 200);
         }
         else {
-            setHeight("unset")
+            setHeight(initialHeight)
             setOpen(true)
             setTimeout(() => {
             setShowText(true);
@@ -61,7 +61,7 @@ const CollapsiblePanel = (props: CollapsiblePanelProps) => {
                     <img style={{transform: !open ? "rotate(-90deg)" : "rotate(90deg)"}} className="button" src={CHEVRON_LEFT} alt="" />
                 </div>
             </div>
-            <div style={{ height: height, marginTop: open ? "2rem" : "0px" }} className="text-container">
+            <div style={{ height: height }} className="text-container">
                 <div ref={contentRef} style={{ opacity: showText ? "1" : "0"}} className="text">{props.text}</div>
             </div>
         </div>
