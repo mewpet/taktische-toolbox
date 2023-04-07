@@ -1,8 +1,7 @@
-import { RandomReveal } from "react-random-reveal";
+
 
 // Components
 import Header from "../components/Header";
-import { RANDOM_CLASS_THURSDAY_BG } from "../assets/exports";
 
 
 const Home = () => {
