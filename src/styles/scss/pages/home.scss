@@ -36,28 +36,23 @@
             .half-panel {
                 overflow: hidden;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 border-radius: 2rem;
-                padding: 4rem 6rem;
                 width: 100%;
                 position: relative;
                 background-color: $main-panel-color;
                 cursor: pointer;
                 
                 .title {
+                    padding: 4rem 6rem;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(71deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
                     z-index: 5;
-                    padding: .5rem 1rem;
                     font-size: 3rem;
                     // background-color: rgba(30, 28, 31, 0.4);
                     // backdrop-filter: blur(1px);
                     border-radius: 2rem;
-                }
-                .stroke {
-                    text-shadow:
-                    -.2rem -.2rem 0 #000,
-                    .2rem -.2rem 0 #000,
-                    -.2rem .2rem 0 #000,
-                    .2rem .2rem 0 #000;
                 }
             }
             .half-panel:hover {

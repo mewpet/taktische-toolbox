@@ -25,20 +25,20 @@
       .home .content .panel-grid .half-panel {
         overflow: hidden;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         border-radius: 2rem;
-        padding: 4rem 6rem;
         width: 100%;
         position: relative;
         background-color: #1e1c1f;
         cursor: pointer; }
         .home .content .panel-grid .half-panel .title {
+          padding: 4rem 6rem;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(71deg, black 0%, rgba(255, 255, 255, 0) 100%);
           z-index: 5;
-          padding: .5rem 1rem;
           font-size: 3rem;
           border-radius: 2rem; }
-        .home .content .panel-grid .half-panel .stroke {
-          text-shadow: -.2rem -.2rem 0 #000, .2rem -.2rem 0 #000, -.2rem .2rem 0 #000, .2rem .2rem 0 #000; }
       .home .content .panel-grid .half-panel:hover {
         box-shadow: 0px 0px 0px 0.2rem #6f106f; }
       .home .content .panel-grid .panel-bg {
