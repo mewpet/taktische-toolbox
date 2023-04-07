@@ -1,0 +1,46 @@
+@import "../colors";
+
+.header {
+    width: 100%;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: $main-background-color;
+    height: 10rem;
+
+    .title {
+        font-size: 5rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .underscore {
+        position: absolute;
+        left: 0;
+        bottom: -.1rem;
+        content: "";
+        width: 0;
+        transition: all 1s cubic-bezier(0.2, 1.03, 0.03, 0.98);
+        opacity: 1;
+        border-bottom: solid .2rem $main-accent-color;
+    }
+
+    .link-container {
+        display: flex;
+        gap: 1rem;
+
+        .link {
+            font-size: 2.5rem;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            background-color: $main-panel-color;
+            border-radius: 1rem;
+            transition: background-color .2s ease;
+        }
+        .link:hover {
+            background-color: $main-accent-color;
+        }
+    }
+}

@@ -1,7 +1,3 @@
-@font-face {
-  font-family: Roboto;
-  src: url("../../assets/fonts/Roboto-Regular.ttf"); }
-
 html {
   font-family: Roboto;
   font-size: 62.5%; }
@@ -12,14 +8,108 @@ body {
   background-color: #141314;
   color: white; }
 
+@font-face {
+  font-family: Roboto;
+  src: url("../../assets/fonts/Roboto-Regular.ttf"); }
+
+* {
+  box-sizing: border-box; }
+
 .header {
+  width: 100%;
   padding: 2rem 3rem;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  position: relative;
+  background-color: #141314;
+  height: 10rem; }
+  .header .title {
+    font-size: 5rem;
+    font-weight: 500;
+    cursor: pointer; }
+  .header .underscore {
+    position: absolute;
+    left: 0;
+    bottom: -.1rem;
+    content: "";
+    width: 0;
+    transition: all 1s cubic-bezier(0.2, 1.03, 0.03, 0.98);
+    opacity: 1;
+    border-bottom: solid 0.2rem #6f106f; }
   .header .link-container {
     display: flex;
-    gap: .5rem; }
+    gap: 1rem; }
     .header .link-container .link {
-      padding: .5rem 2rem;
-      cursor: pointer; }
+      font-size: 2.5rem;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      background-color: #1e1c1f;
+      border-radius: 1rem;
+      transition: background-color .2s ease; }
+    .header .link-container .link:hover {
+      background-color: #6f106f; }
+
+.home {
+  height: 100vh; }
+  .home .content {
+    min-height: calc(100% - 10rem);
+    width: 80%;
+    margin: auto;
+    padding-top: 4rem; }
+    .home .content .wide-panel {
+      width: 100%;
+      padding: 4rem 6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background-color: #1e1c1f;
+      border-radius: 2rem;
+      margin-bottom: 2rem; }
+      .home .content .wide-panel .title {
+        font-size: 3rem; }
+      .home .content .wide-panel .text {
+        width: 70%; }
+    .home .content .panel-grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem; }
+      .home .content .panel-grid .half-panel {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        border-radius: 2rem;
+        padding: 4rem 6rem;
+        width: 100%;
+        position: relative;
+        background-color: #1e1c1f;
+        cursor: pointer; }
+        .home .content .panel-grid .half-panel .title {
+          z-index: 5;
+          padding: .5rem 1rem;
+          font-size: 3rem;
+          background-color: rgba(30, 28, 31, 0.4);
+          backdrop-filter: blur(1px);
+          border-radius: 2rem; }
+      .home .content .panel-grid .half-panel:hover {
+        box-shadow: 0px 0px 0px 0.2rem #6f106f; }
+      .home .content .panel-grid .panel-bg {
+        position: absolute;
+        width: 300%;
+        height: 800px;
+        top: -100px;
+        left: -100%;
+        right: 0;
+        background-image: url("../../assets/random-class-thursday-panel-bg.png");
+        background-position: 0 center;
+        background-size: 150px;
+        background-repeat: repeat;
+        background-color: #1e1c1f;
+        animation: scroll 6s linear infinite; }
+
+@keyframes scroll {
+  from {
+    transform: translateY(0) rotateX(-25deg) rotateY(25deg) rotateZ(25deg); }
+  to {
+    transform: translateY(-325px) rotateX(-25deg) rotateY(25deg) rotateZ(25deg); } }

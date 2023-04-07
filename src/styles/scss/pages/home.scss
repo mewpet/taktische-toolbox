@@ -1,16 +1,85 @@
-.header {
-    padding: 2rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@import "../colors";
 
-    .link-container {
-        display: flex;
-        gap: .5rem;
+.home {
+    height: 100vh;
 
-        .link {
-            padding: .5rem 2rem;
-            cursor: pointer;
+    .content {
+        min-height: calc(100% - 10rem);
+        width: 80%;
+        margin: auto;
+        padding-top: 4rem;
+
+        .wide-panel{
+            width: 100%;
+            padding: 4rem 6rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            background-color: $main-panel-color;
+            border-radius: 2rem;
+            margin-bottom: 2rem;
+            
+            .title {
+                font-size: 3rem;
+            }
+
+            .text {
+                width: 70%;
+            }
+        }
+
+        .panel-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+
+            .half-panel {
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                border-radius: 2rem;
+                padding: 4rem 6rem;
+                width: 100%;
+                position: relative;
+                background-color: $main-panel-color;
+                cursor: pointer;
+                
+                .title {
+                    z-index: 5;
+                    padding: .5rem 1rem;
+                    font-size: 3rem;
+                    background-color: rgba(30, 28, 31, 0.4);
+                    backdrop-filter: blur(1px);
+                    border-radius: 2rem;
+                }
+            }
+            .half-panel:hover {
+                box-shadow: 0px 0px 0px .2rem $main-accent-color;
+            }
+
+            .panel-bg {
+                position: absolute;
+                width: 300%;
+                height: 800px;
+                top: -100px;
+                left: -100%;
+                right: 0;
+                background-image: url("../../assets/random-class-thursday-panel-bg.png");
+                background-position: 0 center;
+                background-size: 150px;
+                background-repeat: repeat;
+                background-color: $main-panel-color;
+                animation: scroll 6s linear infinite; 
+            }
+            @keyframes scroll {
+                from { 
+                    transform: translateY(0) rotateX(-25deg) rotateY(25deg) rotateZ(25deg); 
+                }
+                to { 
+                    transform: translateY(-325px) rotateX(-25deg) rotateY(25deg) rotateZ(25deg); 
+                }
+            }
         }
     }
 }
