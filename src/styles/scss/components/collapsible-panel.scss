@@ -4,7 +4,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     background-color: $main-panel-color;
     border-radius: 2rem;
     margin-bottom: 2rem;
@@ -14,6 +13,7 @@
     .visible-row {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
         
         .title {
@@ -42,6 +42,8 @@
         transition: all .2s ease;
 
         .text {
+            line-height: 2.5rem;
+            transition: opacity .2s ease;
             width: 70%;
         }
     }

@@ -54,7 +54,6 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   background-color: #1e1c1f;
   border-radius: 2rem;
   margin-bottom: 2rem;
@@ -63,6 +62,7 @@ body {
   .collapsible-panel .visible-row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%; }
     .collapsible-panel .visible-row .title {
       font-size: 3rem; }
@@ -81,6 +81,8 @@ body {
   .collapsible-panel .text-container {
     transition: all .2s ease; }
     .collapsible-panel .text-container .text {
+      line-height: 2.5rem;
+      transition: opacity .2s ease;
       width: 70%; }
 
 .home {
