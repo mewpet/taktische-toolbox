@@ -121,9 +121,9 @@ body {
           z-index: 5;
           padding: .5rem 1rem;
           font-size: 3rem;
-          background-color: rgba(30, 28, 31, 0.4);
-          backdrop-filter: blur(1px);
           border-radius: 2rem; }
+        .home .content .panel-grid .half-panel .stroke {
+          text-shadow: -.2rem -.2rem 0 #000, .2rem -.2rem 0 #000, -.2rem .2rem 0 #000, .2rem .2rem 0 #000; }
       .home .content .panel-grid .half-panel:hover {
         box-shadow: 0px 0px 0px 0.2rem #6f106f; }
       .home .content .panel-grid .panel-bg {
@@ -142,9 +142,9 @@ body {
 
 @keyframes scroll {
   from {
-    transform: translateY(0) rotateX(-25deg) rotateY(25deg) rotateZ(25deg); }
+    transform: translateY(0) translateX(0) rotateX(-25deg) rotateY(25deg) rotateZ(25deg); }
   to {
-    transform: translateY(-325px) rotateX(-25deg) rotateY(25deg) rotateZ(25deg); } }
+    transform: translateY(-325px) translateX(1px) rotateX(-25deg) rotateY(25deg) rotateZ(25deg); } }
 
 .rct {
   min-height: calc(100% - 10rem); }

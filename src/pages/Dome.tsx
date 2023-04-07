@@ -17,7 +17,7 @@ const Home = () => {
                 <div className="panel-grid">
                     <div onClick={() => navigate('/random-class-thursday')} className="half-panel">
                         <div className="panel-bg" />
-                        <div className="title">Random Class Thursday</div>
+                        <div className="title stroke">Random Class Thursday</div>
                     </div>
                     <div className="half-panel">
                         <div className="title">Bingo! <i>(Coming soon™)</i></div>
