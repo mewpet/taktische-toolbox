@@ -1,10 +1,11 @@
+import CollapsiblePanel from "../components/CollapsiblePanel"
 
 
 const RCT = () => {
     return (
         <div className="rct">
             <div className="content">
-                Test
+                <CollapsiblePanel />
             </div>
         </div>
     )

@@ -1,0 +1,48 @@
+@import "../colors";
+
+.collapsible-panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: $main-panel-color;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    padding: 4rem 6rem;
+    cursor: pointer;
+
+    .visible-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+        .title {
+            font-size: 3rem;
+        }
+
+        .button-container {
+            height: 6rem;
+            width: 6rem;
+            padding: 1rem;
+            border-radius: 6rem;
+            background-color: $main-background-color;
+            
+            .button {
+                height: 100%;
+                width: auto;
+                filter: invert(1);
+                user-select: none;
+                transition: all 0.2s ease;
+            }
+        }
+    }
+
+
+    .text-container {
+        transition: all .2s ease;
+
+        .text {
+            width: 70%;
+        }
+    }
+}

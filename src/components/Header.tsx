@@ -15,7 +15,6 @@ const Header = () => {
                     ignoreCharacterSet={[' ']}
                     characters={`Taktische Toolbox`}
                     onComplete={() => {
-                        console.log(document.getElementsByClassName('underscore')[0])
                         document.getElementsByClassName('underscore')[0].setAttribute("style", "width: 100%");
                     }}
                 />

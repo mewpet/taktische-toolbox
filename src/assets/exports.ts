@@ -1,5 +1,5 @@
-import RANDOM_CLASS_THURSDAY_BG from "./random-class-thursday-panel-bg.png";
+import CHEVRON_LEFT from "./chevron-left.svg";
 
 export {
-    RANDOM_CLASS_THURSDAY_BG
+    CHEVRON_LEFT
 }

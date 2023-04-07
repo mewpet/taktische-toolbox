@@ -1,0 +1,32 @@
+.collapsible-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #1e1c1f;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  padding: 4rem 6rem;
+  cursor: pointer; }
+  .collapsible-panel .visible-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    .collapsible-panel .visible-row .title {
+      font-size: 3rem; }
+    .collapsible-panel .visible-row .button-container {
+      height: 6rem;
+      width: 6rem;
+      padding: 1rem;
+      border-radius: 6rem;
+      background-color: #141314; }
+      .collapsible-panel .visible-row .button-container .button {
+        height: 100%;
+        width: auto;
+        filter: invert(1);
+        user-select: none;
+        transition: all 0.2s ease; }
+  .collapsible-panel .text-container {
+    transition: all .2s ease; }
+    .collapsible-panel .text-container .text {
+      width: 70%; }
