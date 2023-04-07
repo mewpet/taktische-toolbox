@@ -9,7 +9,6 @@ const Home = () => {
 
     return (
         <div className="home">
-            <Header />
             <div className="content">
                 <div className="wide-panel">
                     <div className="title">How things work here!</div>

@@ -1,7 +1,6 @@
 .home {
-  height: 100vh; }
+  min-height: calc(100% - 10rem); }
   .home .content {
-    min-height: calc(100% - 10rem);
     width: 80%;
     margin: auto;
     padding-top: 4rem; }
