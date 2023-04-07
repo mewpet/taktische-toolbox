@@ -7,15 +7,13 @@ import RCT from './pages/RCT';
 
 function App() {
   return (
-    <>
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/random-class-thursday" element={<RCT/>} />
           <Route path="*" element={<Home/>} />
         </Routes>
       </BrowserRouter>
-    </>
   );
 }
 

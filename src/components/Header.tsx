@@ -1,10 +1,12 @@
 import { RandomReveal } from "react-random-reveal";
+import { useNavigate } from "react-router-dom";
 
 
 const Header = () => {
+    let navigate = useNavigate()
     return (
         <div className="header">
-            <div className="title">
+            <div onClick={() => navigate('/')} className="title">
                 <RandomReveal 
                     isPlaying
                     duration={2}

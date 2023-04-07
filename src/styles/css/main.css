@@ -112,3 +112,10 @@ body {
     transform: translateY(0) rotateX(-25deg) rotateY(25deg) rotateZ(25deg); }
   to {
     transform: translateY(-325px) rotateX(-25deg) rotateY(25deg) rotateZ(25deg); } }
+
+.rct {
+  min-height: calc(100% - 10rem); }
+  .rct .content {
+    width: 80%;
+    margin: auto;
+    padding-top: 4rem; }
