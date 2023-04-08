@@ -156,7 +156,7 @@ const RCT = () => {
     return (
         <div className="rct">
             <div className="content">
-                <CollapsiblePanel title="How to use the randomizer" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit incidunt officia labore molestiae pariatur impedit repellendus, iure maiores quas voluptatum? Autem consequuntur, dolorum aperiam corporis rem inventore accusantium fugit exercitationem odio, molestias tempora quasi repellendus consequatur placeat ea, cupiditate obcaecati quia recusandae hic distinctio labore laudantium! Minus corporis fuga vero ullam reiciendis cupiditate quisquam nemo atque, animi iusto saepe laudantium!" />
+                <CollapsiblePanel title="How to use the randomizer" text="Disabled the classes and wings you dont want to include in the randomizer and click on generate! Clicking on the panel again will result in a new generated combination." />
                 <div className="input-grid">
                     <div className="left-side">
                         <div className="class-grid">
@@ -227,6 +227,105 @@ const RCT = () => {
                                     </> : <>Generate random raid!</>
                                 }
                                 
+                            </div>
+                        </div>
+                        <div className="stat-row">
+                            <div className="stat-panel">
+                                <div className="title">[nox] stats</div>
+                                <div className="stat-table">
+                                    <div className="class noTopBoder noLeftBorder">Wing</div>
+                                    <div className="wing noTopBoder">1</div>
+                                    <div className="wing noTopBoder">2</div>
+                                    <div className="wing noTopBoder">3</div>
+                                    <div className="wing noTopBoder">4</div>
+                                    <div className="wing noTopBoder">5</div>
+                                    <div className="wing noTopBoder">6</div>
+                                    <div className="wing noTopBoder noRightBorder">7</div>
+
+                                    <div className="class noLeftBorder">Guadian</div>
+                                    <div className="wing"> </div>
+                                    <div className="wing">X</div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing">X</div>
+                                    <div className="wing">X</div>
+                                    <div className="wing noRightBorder"> </div>
+
+                                    <div className="class noLeftBorder">Warrior</div>
+                                    <div className="wing">X</div>
+                                    <div className="wing">X</div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing noRightBorder"> </div>
+
+                                    <div className="class noLeftBorder">Revenant</div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing">X</div>
+                                    <div className="wing">X</div>
+                                    <div className="wing">X</div>
+                                    <div className="wing"> </div>
+                                    <div className="wing noRightBorder"> </div>
+
+                                    <div className="class noLeftBorder">Engineer</div>
+                                    <div className="wing">X</div>
+                                    <div className="wing"> </div>
+                                    <div className="wing">X</div>
+                                    <div className="wing">X</div>
+                                    <div className="wing"> </div>
+                                    <div className="wing">X</div>
+                                    <div className="wing noRightBorder"> </div>
+
+                                    <div className="class noLeftBorder">Thief</div>
+                                    <div className="wing">X</div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing noRightBorder"> </div>
+
+                                    <div className="class noLeftBorder">Ranger</div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing">X</div>
+                                    <div className="wing"> </div>
+                                    <div className="wing noRightBorder"> </div>
+
+                                    <div className="class noLeftBorder">Mesmer</div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing">X</div>
+                                    <div className="wing noRightBorder"> </div>
+
+                                    <div className="class noLeftBorder">Necro</div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing"> </div>
+                                    <div className="wing">X</div>
+                                    <div className="wing">X</div>
+                                    <div className="wing noRightBorder"> </div>
+
+                                    <div className="class noLeftBorder noBottomBorder">Elementalist</div>
+                                    <div className="wing noBottomBorder"> </div>
+                                    <div className="wing noBottomBorder"> </div>
+                                    <div className="wing noBottomBorder"> </div>
+                                    <div className="wing noBottomBorder"> </div>
+                                    <div className="wing noBottomBorder"> </div>
+                                    <div className="wing noBottomBorder"> </div>
+                                    <div className="wing noBottomBorder noRightBorder"> </div>
+                                </div>
+                            </div>
+                            <div className="stat-panel"> 
+                                <div className="title">Create your own table <i>(Comin soon™)</i></div>
                             </div>
                         </div>
                     </div>

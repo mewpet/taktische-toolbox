@@ -27,6 +27,7 @@
                 width: (calc(85% - 1rem));
                 display: flex;
                 flex-direction: column;
+                gap: 2rem;
             }
 
             .class-grid {
@@ -54,7 +55,6 @@
                     transform: scale(1.2)
                 }
             }
-
 
             .raid-list {
                 width: 100%;
@@ -89,6 +89,61 @@
 
                 .text {
                     font-size: 3rem;
+                }
+            }
+
+            .stat-row {
+                display: flex;
+                gap: 2rem;
+
+                .stat-panel {
+                    width: 100%;
+                    padding: 3rem;
+                    background-color: $main-panel-color;
+                    border-radius: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .title {
+                        font-size: 3rem;
+                        margin-bottom: 2rem;
+                    }
+
+                    .stat-table {
+                        display: grid;
+                        grid-template-columns: 3fr repeat(7, 1fr);
+
+                        .class, .wing {
+                            border: .1rem solid $main-panel-color-light;
+                        }
+
+                        .class {
+                            padding: .5rem 1rem;
+                        }
+
+                        .wing {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .noTopBoder {
+                            border-top: none !important;
+                        }
+
+                        .noRightBorder {
+                            border-right: none !important;
+                        }
+
+                        .noBottomBorder {
+                            border-bottom: none !important;
+                        }
+
+                        .noLeftBorder {
+                            border-left: none !important;
+                        }
+                    }
                 }
             }
         }
