@@ -1,4 +1,5 @@
 @import "../colors";
+@import "../consts";
 
 .rct {
     min-height: calc(100% - 10rem);
@@ -12,15 +13,23 @@
         .input-grid {
             width: 100%;
             display: flex;
-            flex-wrap: wrap;
             gap: 2rem;
             align-items: flex-start;
+
+            @media screen and (max-width: $breakpoint-tablet) {
+                flex-direction: column;
+            }
 
             .left-side {
                 width: (calc(15% - 1rem));
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
+
+                @media screen and (max-width: $breakpoint-tablet) {
+                    width: 100%;
+                    flex-direction: row;
+                }
             }
 
             .right-side {
@@ -28,6 +37,10 @@
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
+
+                @media screen and (max-width: $breakpoint-tablet) {
+                    width: 100%;
+                }
             }
 
             .class-grid {
@@ -38,6 +51,10 @@
                 display: grid;
                 gap: 2rem;
                 grid-template-columns: repeat(3, 1fr);
+
+                @media screen and (max-width: $breakpoint-tablet) {
+                    width: 30%;
+                }
 
                 .icon-container {
                     display: flex;
@@ -65,8 +82,19 @@
                 flex-direction: column;
                 gap: 2rem;
 
+                @media screen and (max-width: $breakpoint-tablet) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    width: 70%;
+                }
+
                 .wing-container {
                     width: 100%;
+
+                    @media screen and (max-width: $breakpoint-tablet) {
+                        width: calc((100% / 3) -  2rem);
+                    }
                 }
             }
 

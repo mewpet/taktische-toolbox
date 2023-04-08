@@ -1,4 +1,5 @@
 @import "../colors";
+@import "../consts";
 
 .collapsible-panel {
     width: 100%;
@@ -45,6 +46,15 @@
             line-height: 2.5rem;
             transition: opacity .2s ease;
             width: 70%;
+
+            @media screen and (max-width: $breakpoint-tablet) {
+                margin-top: 1rem;
+                width: 90%;
+            }
+            @media screen and (max-width: $breakpoint-mobile) {
+                margin-top: 1rem;
+                width: 100%;
+            }
         }
     }
 }

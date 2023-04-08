@@ -8,19 +8,28 @@
     .rct .content .input-grid {
       width: 100%;
       display: flex;
-      flex-wrap: wrap;
       gap: 2rem;
       align-items: flex-start; }
+      @media screen and (max-width: 1500px) {
+        .rct .content .input-grid {
+          flex-direction: column; } }
       .rct .content .input-grid .left-side {
         width: calc(15% - 1rem);
         display: flex;
         flex-direction: column;
         gap: 2rem; }
+        @media screen and (max-width: 1500px) {
+          .rct .content .input-grid .left-side {
+            width: 100%;
+            flex-direction: row; } }
       .rct .content .input-grid .right-side {
         width: calc(85% - 1rem);
         display: flex;
         flex-direction: column;
         gap: 2rem; }
+        @media screen and (max-width: 1500px) {
+          .rct .content .input-grid .right-side {
+            width: 100%; } }
       .rct .content .input-grid .class-grid {
         width: 100%;
         padding: 3rem;
@@ -29,6 +38,9 @@
         display: grid;
         gap: 2rem;
         grid-template-columns: repeat(3, 1fr); }
+        @media screen and (max-width: 1500px) {
+          .rct .content .input-grid .class-grid {
+            width: 30%; } }
         .rct .content .input-grid .class-grid .icon-container {
           display: flex;
           justify-content: center;
@@ -48,8 +60,17 @@
         display: flex;
         flex-direction: column;
         gap: 2rem; }
+        @media screen and (max-width: 1500px) {
+          .rct .content .input-grid .raid-list {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 70%; } }
         .rct .content .input-grid .raid-list .wing-container {
           width: 100%; }
+          @media screen and (max-width: 1500px) {
+            .rct .content .input-grid .raid-list .wing-container {
+              width: calc((100% / 3) -  2rem); } }
       .rct .content .input-grid .result-panel {
         width: 100%;
         padding: 3rem;

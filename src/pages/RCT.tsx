@@ -325,7 +325,7 @@ const RCT = () => {
                                 </div>
                             </div>
                             <div className="stat-panel"> 
-                                <div className="title">Create your own table <i>(Comin soon™)</i></div>
+                                <div className="title">Create your own table <i>(Comin&nbsp;soon™)</i></div>
                             </div>
                         </div>
                     </div>
