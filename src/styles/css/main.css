@@ -85,6 +85,13 @@ body {
       transition: opacity .2s ease;
       width: 70%; }
 
+.class-grid-icon {
+  height: auto;
+  width: 100%;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all .2s ease; }
+
 .home {
   min-height: calc(100% - 10rem); }
   .home .content {
@@ -149,8 +156,69 @@ body {
     transform: translateY(-325px) translateX(1px) rotateX(-25deg) rotateY(25deg) rotateZ(25deg); } }
 
 .rct {
-  min-height: calc(100% - 10rem); }
+  min-height: calc(100% - 10rem);
+  padding-bottom: 20rem; }
   .rct .content {
     width: 80%;
     margin: auto;
     padding-top: 4rem; }
+    .rct .content .input-grid {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start; }
+      .rct .content .input-grid .left-side {
+        width: calc(15% - 1rem);
+        display: flex;
+        flex-direction: column;
+        gap: 2rem; }
+      .rct .content .input-grid .right-side {
+        width: calc(85% - 1rem);
+        display: flex;
+        flex-direction: column; }
+      .rct .content .input-grid .class-grid {
+        width: 100%;
+        padding: 3rem;
+        border-radius: 2rem;
+        background-color: #1e1c1f;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr); }
+        .rct .content .input-grid .class-grid .icon-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          aspect-ratio: 1/1; }
+        .rct .content .input-grid .class-grid .icon-scale {
+          transition: transform 0.2s ease; }
+        .rct .content .input-grid .class-grid .icon-scale:hover {
+          transform: scale(1.2); }
+      .rct .content .input-grid .raid-list {
+        width: 100%;
+        padding: 3rem;
+        background-color: #1e1c1f;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem; }
+        .rct .content .input-grid .raid-list .wing-container {
+          width: 100%; }
+      .rct .content .input-grid .result-panel {
+        width: 100%;
+        padding: 3rem;
+        background-color: #1e1c1f;
+        border-radius: 2rem;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; }
+        .rct .content .input-grid .result-panel img {
+          width: 50rem;
+          user-select: none; }
+        .rct .content .input-grid .result-panel .text {
+          font-size: 3rem; }

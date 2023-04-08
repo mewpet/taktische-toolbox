@@ -25,10 +25,15 @@ const CollapsiblePanel = (props: CollapsiblePanelProps) => {
 
     
     const handleResize = () => {
+        if(!open) {
+            setOpen(false)
+            setShowText(false);
+            setTimeout(() => {
+                setHeight("0px")
+            }, 200)
+        }
         if (contentRef && contentRef.current) {
             setInitialHeight((contentRef.current as HTMLElement).clientHeight/10 + "rem")
-            if (!open) 
-                setHeight(initialHeight)
         }
     }
     useEffect(() => {

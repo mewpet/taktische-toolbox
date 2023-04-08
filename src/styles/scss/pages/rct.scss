@@ -2,10 +2,95 @@
 
 .rct {
     min-height: calc(100% - 10rem);
+    padding-bottom: 20rem;
 
     .content {
         width: 80%;
         margin: auto;
         padding-top: 4rem;
+
+        .input-grid {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: flex-start;
+
+            .left-side {
+                width: (calc(15% - 1rem));
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .right-side {
+                width: (calc(85% - 1rem));
+                display: flex;
+                flex-direction: column;
+            }
+
+            .class-grid {
+                width: 100%;
+                padding: 3rem;
+                border-radius: 2rem;
+                background-color: $main-panel-color;
+                display: grid;
+                gap: 2rem;
+                grid-template-columns: repeat(3, 1fr);
+
+                .icon-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    // width: calc((50rem - 2 * 5rem - 2 * 2rem) / 3);
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                }
+                .icon-scale {
+                    transition: transform 0.2s ease;
+                }
+                .icon-scale:hover {
+                    transform: scale(1.2)
+                }
+            }
+
+
+            .raid-list {
+                width: 100%;
+                padding: 3rem;
+                background-color: $main-panel-color;
+                border-radius: 2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                .wing-container {
+                    width: 100%;
+                }
+            }
+
+            .result-panel {
+                width: 100%;
+                padding: 3rem;
+                background-color: $main-panel-color;
+                border-radius: 2rem;
+                display: flex;
+                gap: 2rem;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                img {
+                    width: 50rem;
+                    user-select: none;
+                }
+
+                .text {
+                    font-size: 3rem;
+                }
+            }
+        }
     }
 }
