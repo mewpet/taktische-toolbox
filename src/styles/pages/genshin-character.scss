@@ -1,0 +1,10 @@
+.genshin-character {
+    min-height: calc(100% - 10rem);
+    padding-bottom: $padding-bottom;
+
+    .content {
+        width: 80%;
+        margin: auto;
+        padding-top: calc($padding-top + 5rem);
+    }
+}

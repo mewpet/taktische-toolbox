@@ -3,7 +3,7 @@
 const GenshinCharacter = () => {
     return (
         <div className="genshin-character">
-            Blub
+            <div className="content">Blub</div>
         </div>
     )
 }
