@@ -1,14 +1,18 @@
+import { useNavigate } from "react-router-dom"
 import { Timer } from "./Timer"
 
 interface GenshinNextBanner {
     image: string,
-    title: string
+    title: string,
+    link: string,
+    timestamp: number
 }
 
 const GenshinNextBanner = (props: GenshinNextBanner) => {
+    const navigate = useNavigate()
     
     return (
-        <div className="genshin-next-banner">
+        <div onClick={() => navigate(props.link)} className="genshin-next-banner">
             <div className="splash-cell">
                 <img src={props.image} alt="" className="banner-splash" />
             </div>
@@ -16,7 +20,7 @@ const GenshinNextBanner = (props: GenshinNextBanner) => {
                 <div className="title">{props.title}</div>
                 
                 <div className="timer-container">
-                    <Timer timestamp={1699459200} />
+                    <Timer timestamp={props.timestamp} />
                 </div>
             </div>
         </div>
