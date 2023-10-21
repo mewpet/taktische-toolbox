@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+.rct-custom-button {
+    position: absolute;
+    width: 300%;
+    height: 800px;
+    top: -100px;
+    left: -100%;
+    right: 0;
+    background-image: url("../assets/random-class-thursday-panel-bg.png");
+    background-position: 0 center;
+    background-size: 150px;
+    background-repeat: repeat;
+    background-color: $main-panel-color;
+    animation: scroll 12s linear infinite; 
+}
+@keyframes scroll {
+    from { 
+        transform: translateY(0) translateX(0) rotateX(-25deg) rotateY(25deg) rotateZ(25deg); 
+    }
+    to { 
+        transform: translateY(-325px) translateX(1px) rotateX(-25deg) rotateY(25deg) rotateZ(25deg); 
+    }
+}
+
+.genshin-button {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/furinabanner.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $main-panel-color;
+}

@@ -1,11 +1,10 @@
-import { useNavigate } from "react-router-dom";
+import { URLS } from "../utils/consts";
 
 // Components
-import Header from "../components/Header";
+import { NavButton } from "../components/NavButton";
 
 
 const Home = () => {
-    let navigate = useNavigate();
 
     return (
         <div className="home">
@@ -15,13 +14,13 @@ const Home = () => {
                     <div className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit incidunt officia labore molestiae pariatur impedit repellendus, iure maiores quas voluptatum? Autem consequuntur, dolorum aperiam corporis rem inventore accusantium fugit exercitationem odio, molestias tempora quasi repellendus consequatur placeat ea, cupiditate obcaecati quia recusandae hic distinctio labore laudantium! Minus corporis fuga vero ullam reiciendis cupiditate quisquam nemo atque, animi iusto saepe laudantium!</div>
                 </div>
                 <div className="panel-grid">
-                    <div onClick={() => navigate('/random-class-thursday')} className="half-panel">
-                        <div className="panel-bg" />
-                        <div className="title">Random Class Thursday</div>
-                    </div>
-                    <div className="half-panel">
-                        <div className="title">Bingo! <i>(Coming soon™)</i></div>
-                    </div>
+                    <NavButton text="Random Class Thursday" link={URLS.RANDOM_CLASS_THURSDAY}>
+                        <div className="rct-custom-button" />
+                    </NavButton>
+                    <NavButton text="Bingo! (Coming soon™)" />
+                    <NavButton text="Genshin" link={URLS.GENSHIN_MAIN}>
+                        <div className="genshin-button" />
+                    </NavButton>
                 </div>
             </div>
         </div>

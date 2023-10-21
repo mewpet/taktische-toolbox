@@ -1,3 +1,4 @@
+
 @import "theme";
 @import "fonts";
 @import "misc";
@@ -7,7 +8,11 @@
 @import "./components/header.scss";
 @import "./components/collapsible-panel.scss";
 @import "./components/class-grid-icon.scss";
+@import "./components/nav-button.scss";
+@import "./components/genshin-next-banner.scss";
+@import "./components/timer.scss";
 
 // Pages
 @import "./pages/home.scss";
 @import "./pages/rct.scss";
+@import "./pages/genshin-main.scss";

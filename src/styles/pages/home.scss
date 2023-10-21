@@ -6,7 +6,7 @@
     .content {
         width: 80%;
         margin: auto;
-        padding-top: 4rem;
+        padding-top: $padding-top;
 
         .wide-panel{
             width: 100%;
@@ -57,29 +57,6 @@
             }
             .half-panel:hover {
                 box-shadow: 0px 0px 0px .2rem $main-accent-color;
-            }
-
-            .panel-bg {
-                position: absolute;
-                width: 300%;
-                height: 800px;
-                top: -100px;
-                left: -100%;
-                right: 0;
-                background-image: url("../../assets/random-class-thursday-panel-bg.png");
-                background-position: 0 center;
-                background-size: 150px;
-                background-repeat: repeat;
-                background-color: $main-panel-color;
-                animation: scroll 12s linear infinite; 
-            }
-            @keyframes scroll {
-                from { 
-                    transform: translateY(0) translateX(0) rotateX(-25deg) rotateY(25deg) rotateZ(25deg); 
-                }
-                to { 
-                    transform: translateY(-325px) translateX(1px) rotateX(-25deg) rotateY(25deg) rotateZ(25deg); 
-                }
             }
         }
     }

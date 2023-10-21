@@ -3,12 +3,12 @@
 
 .rct {
     min-height: calc(100% - 10rem);
-    padding-bottom: 20rem;
+    padding-bottom: $padding-bottom;
 
     .content {
         width: 80%;
         margin: auto;
-        padding-top: 4rem;
+        padding-top: $padding-top;
 
         .input-grid {
             width: 100%;

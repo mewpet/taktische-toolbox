@@ -15,6 +15,9 @@ import WING_4_LS from "./loadingScreens/W4.png";
 import WING_5_LS from "./loadingScreens/W5.jpg";
 import WING_6_LS from "./loadingScreens/W6.jpg";
 import WING_7_LS from "./loadingScreens/W7.jpg";
+import FURINA_SPLASH from "./furina_splash.png";
+import FURINA_PROFILE from "./furina_profile.png";
+import FURINA_EMOTE from "./furina_emote.png";
 
 export {
     CHEVRON_LEFT,
@@ -33,5 +36,8 @@ export {
     WING_4_LS,
     WING_5_LS,
     WING_6_LS,
-    WING_7_LS
+    WING_7_LS,
+    FURINA_SPLASH,
+    FURINA_PROFILE,
+    FURINA_EMOTE
 }
