@@ -4,12 +4,13 @@ services:
 
   vite-docker:
     container_name: vite-app
+    image: vite-app
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - ".:/app"
-      - "/app/node_modules"
+      - "./:/usr/src/app"
     ports:
       - 3000:3000
     environment:

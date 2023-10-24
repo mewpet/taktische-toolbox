@@ -4,9 +4,11 @@ WORKDIR /app
 
 ENV PATH /app/node_modules/.bin:$PATH
 
-COPY package.json .
-COPY package-lock.json .
-RUN npm install
+COPY package.json package-lock.json* ./
+RUN npm ci
 
 COPY . .
-CMD ["npm", "start"]
+
+WORKDIR /usr/src/app
+
+CMD [ -d "node_modules" ] && npm start || npm ci && npm start
