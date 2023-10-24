@@ -7,9 +7,13 @@ export default defineConfig({
   base: '',
   plugins: [react(), viteTsconfigPaths()],
   server: {
+    host: true,
     // this ensures that the browser opens upon server start
-    open: true,
+    open: false,
     // this sets a default port to 3000
     port: 3000,
+    watch: {
+      usePolling: true
+    }
   },
 });
