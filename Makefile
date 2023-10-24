@@ -2,10 +2,7 @@ setup:
 	docker build --no-cache -t vite-app .
 
 start:
-	docker compose up -d
-
-attach:
-	docker attach vite-app
+	docker compose up
 
 stop:
 	docker compose down
