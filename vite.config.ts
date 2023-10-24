@@ -4,7 +4,7 @@ import viteTsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   // depending on your application, base can also be "/"
-  base: '',
+  base: './',
   plugins: [react(), viteTsconfigPaths()],
   server: {
     host: true,
@@ -15,5 +15,5 @@ export default defineConfig({
     watch: {
       usePolling: true
     }
-  },
+  }
 });

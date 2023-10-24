@@ -4,8 +4,15 @@ setup:
 start:
 	docker compose up -d
 
+attach:
+	docker attach vite-app
+
 stop:
 	docker compose down
 
-attach:
-	docker attach vite-app
+build:
+	rm -f -R dist
+	docker exec -it vite-app vite build
+
+deploy:
+	firebase deploy
