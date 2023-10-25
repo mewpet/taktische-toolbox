@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Getting Started with Vite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was build with Docker in mind. If you plan on contributing to this repo please follow the docker setup described below.
 
-## Available Scripts
+TODO: App-Description
 
-In the project directory, you can run:
+## Setup
 
-### `npm start`
+### `make setup` OR `docker build --no-cache -t vite-app .`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Creates the docker image used to run the vite app.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Installs dependencies in the container.
 
-### `npm test`
+This step should only be necessary once. You may need to execute it again if your dependencies change.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `make start` OR `docker compose up -d`
 
-### `npm run build`
+Boots the container.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If no node_modules directory is present on the host the container will expose its own directory to the host.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you install node_modules for the first time you may need to restart your IDE to see markups.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Development
 
-### `npm run eject`
+### `make start`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The application listens on `localhost:3000`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `make stop`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Stops the container.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Deployment
 
-## Learn More
+### `make build`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Creates production ready build.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Builds are stored in `/dist`
 
-### Code Splitting
+### `make deploy`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Uses firebase cli to deploy the application.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+An authenticated Google account is needed for this step.
