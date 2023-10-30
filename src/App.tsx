@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
 import { URLS } from './utils/consts';
+import { Header } from './components/Header';
 
 // Pages
-import Home from './pages/Home';
-import RCT from './pages/RCT';
 import { GenshinMain } from './pages/GenshinMain';
 import { GenshinCharacter } from './pages/GenshinCharacter';
+import { Home } from './pages/Home';
+import { RCT } from './pages/RCT';
 
 function App() {
   return (
@@ -23,4 +23,7 @@ function App() {
   );
 }
 
-export default App;
+export {
+  App
+}
+  

@@ -1,8 +1,8 @@
 import { useState } from "react"
 
 // Components
-import CollapsiblePanel from "../components/CollapsiblePanel"
-import ClassGridIcon from "../components/ClassGridIcon"
+import { CollapsiblePanel } from "../components/CollapsiblePanel"
+import { ClassGridIcon } from "../components/ClassGridIcon"
 
 // Assets
 import { ELEMENTALIST_ICON, ENGINEER_ICON, GUARDIAN_ICON, MESMER_ICON, NECROMANCER_ICON, RANGER_ICON, REVENANT_ICON, THIEF_ICON, WARRIOR_ICON, WING_1_LS, WING_2_LS, WING_3_LS, WING_4_LS, WING_5_LS, WING_6_LS, WING_7_LS } from "../assets/exports"
@@ -335,7 +335,9 @@ const RCT = () => {
     )
 }
 
-export default RCT
+export {
+    RCT
+}
 
 const classList = {
     guard: {

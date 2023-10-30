@@ -73,4 +73,6 @@ const CollapsiblePanel = (props: CollapsiblePanelProps) => {
     )
 }
 
-export default CollapsiblePanel
+export { 
+    CollapsiblePanel 
+}

@@ -27,4 +27,6 @@ const ClassGridIcon = (props: ClassGridIconProps) => {
     )
 }
 
-export default ClassGridIcon
+export {
+    ClassGridIcon
+}
