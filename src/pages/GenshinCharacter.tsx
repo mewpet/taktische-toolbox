@@ -1,9 +1,12 @@
+import { MaterialTimer } from "../components/MaterialTimer"
 
 
 const GenshinCharacter = () => {
     return (
         <div className="genshin-character">
-            <div className="content">Blub</div>
+            <div className="content">
+                <MaterialTimer />
+            </div>
         </div>
     )
 }

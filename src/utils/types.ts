@@ -8,8 +8,11 @@ type GWRaid = {
     thumbnail: any;
 }
 
+type Days = "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday" | "Saturday" | "Sunday";
+
 export {
     GWClass,
     GWRaid,
-    GWClassExtended
+    GWClassExtended,
+    Days
 }

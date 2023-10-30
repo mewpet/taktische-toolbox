@@ -1,0 +1,37 @@
+@import '../colors';
+
+.material-timer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    background-color: $main-panel-color;
+    padding: 4rem 6rem;
+    border-radius: 2rem;
+    column-gap: .5rem;
+
+    .day-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .5rem;
+        padding: .5rem;
+        border-radius: 2rem;
+
+        .day-label {
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .day-content {
+            display: grid;
+            place-items: center;
+        }
+    }
+
+    .active {
+        background-color: $main-panel-color-light;
+    }
+}
